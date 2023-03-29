@@ -1,1 +1,10 @@
-
+---
+on:
+  pull_request: 
+    types: ['created'] 
+jobs:
+  bash-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: bash-version
+        run: echo "::add-mask::$MY_NAME"
