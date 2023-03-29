@@ -2,6 +2,7 @@
 on:
   pull_request: 
     types: ['created'] 
+    branches: ['main']
 jobs:
   bash-example:
     runs-on: ubuntu-latest
